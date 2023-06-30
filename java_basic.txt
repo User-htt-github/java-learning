@@ -1,0 +1,32 @@
+1. Syntax
+	- Tất cả các dòng code đều phải ở trong 1 class
+	- Bắt buộc phải có hàm main và tất cả code ở trong đó đều được thực hiện
+2. Biến - tương tự C# chỉ khác tên 1 chút
+	- String
+	- int
+	- float
+	- double
+	- boolean
+3. final giống với const trong c#
+4. Khai báo biến giống với c# 
+5. Kiểu dữ liệu
+	- Primitive Data Types: byte, short, int, long, char, boolean, float, và double
+	- Non-primitive data types : String, Arrays và Classes
+6. Các cú pháp if else, switch case, for loop, for each tương tự c#
+7. Method và method param tương tự c#
+8. Overload và Override tương tự c#
+9. Scope ( Không thể sử dụng biến khi chưa khai báo hoặc từ bên ngoài block sử dụng biến được khai báo bên trong block )
+10. Callback ~ Recursion
+	public class Main {
+	  public static void main(String[] args) {
+		int result = sum(10);
+		System.out.println(result);
+	  }
+	  public static int sum(int k) {
+		if (k > 0) {
+		  return k + sum(k - 1);
+		} else {
+		  return 0;
+		}
+	  }
+	}
