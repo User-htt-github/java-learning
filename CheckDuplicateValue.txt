@@ -1,0 +1,35 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class CheckingDuplicateValue {
+	public static Scanner scanner = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		System.out.print("Input array length: ");
+		int n = scanner.nextInt();
+		int[] arr = new int[n];
+		System.out.print("Input array element: \n");
+		for (int i = 0; i < n; i++) {
+			System.out.printf("a[%d] = ", i);
+			arr[i] = scanner.nextInt();
+		}
+
+		checkDuplicateValue(arr);
+	}
+
+	public static void checkDuplicateValue(int[] arr) {
+		ArrayList<Integer> duplicateList = null;
+		for (int i = 0; i < arr.length; i++) {
+			int duplicateElement = arr[i];
+			if (Arrays.asList(arr).indexOf(duplicateElement) > 0) {
+				if (duplicateList.indexOf(duplicateElement) > 0) {
+					duplicateList.add(duplicateElement);
+					System.out.println(duplicateElement);
+				}
+			}
+		}
+	}
+}
