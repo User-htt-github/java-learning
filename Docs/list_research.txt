@@ -1,0 +1,48 @@
+Declaration:
+
+	- public interface List<E> extends Collection<E>  
+	
+Methods:
+
+	name 				 				| 	definition 										| 	example  
+	
+	add(index, element) 				|	insert element at the specified position		|	lst.add(3, "OMG")
+	
+	add(element)						|	insert element at the end of list				|	lst.add("OMG")
+	
+	addAll(Collection<? extends E> c)	|	add all elements in collection to the end		|	lst.addAll(c)
+											of the list
+	
+	addAll(index,						|	add all elements in collection to list, 		|	lst.addAll(c)
+		Collection<? extends E> c)			start at the specified position
+				
+	clear()								|	remove all elements from the list				| 	lst.remove()
+	
+	get(index)							| 	fetch the element from the particular 			|	lst.get(2)
+											position of the list. 
+											
+	set(index, object)					| 	replace the specified element in the list,		|	lst.set(2, object)
+											present at the specified position		
+
+	remove(index), remove(o),			| 	Remove the specified element in the list.		|	remove(1), remove(o), removeAll()
+	removeAll()					Remove the first occurrence of the specified 
+											element in the list..
+											Remove all element in the list
+											
+	isEmpty()							| 	It returns true if the list is empty, 			|
+											otherwise false.
+											
+	size()								|	Return the number of elements present in the	| 
+											list
+	
+	listIterator()						|	Return iterator start with the first element	|
+											of the list										
+											
+	listIterator()						|	Return iterator start with the index element	|
+											of the list
+
+	contains(o)							|	Returns true if the list contains the			|
+											specified element	
+
+	containsAll(Collection<?> c)		|	Returns true if the list contains all 			|
+											the specified element 									
