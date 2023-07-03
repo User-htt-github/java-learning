@@ -1,10 +1,9 @@
 package main;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
-public class CheckingDuplicateValue {
+public class ReverseString {
 	public static Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -21,15 +20,12 @@ public class CheckingDuplicateValue {
 	}
 
 	public static void checkDuplicateValue(int[] arr) {
-		ArrayList<Integer> duplicateList = null;
-		for (int i = 0; i < arr.length; i++) {
-			int duplicateElement = arr[i];
-			if (Arrays.asList(arr).indexOf(duplicateElement) > 0) {
-				if (duplicateList.indexOf(duplicateElement) > 0) {
-					duplicateList.add(duplicateElement);
-					System.out.println(duplicateElement);
-				}
-			}
-		}
+		Set<Integer> printed = new HashSet<Integer>();
+		  for(int i = 0; i < arr.length; i++) {
+			// Hash set chỉ chứa 1 phần tử duy nhất nên check xem phần tử đã đc thêm vào chưa là xong
+		    if (!printed.add(new Integer(arr[i]))) {
+		       System.out.println(arr[i]);
+		    }
+		  }
 	}
 }
