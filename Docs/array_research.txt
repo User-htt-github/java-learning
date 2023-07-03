@@ -1,0 +1,52 @@
+Array
+
+	- Advantages: Optimized code, retrieve or sort data efficiently, get any data at any index
+
+	- Disadvantages: Size limit
+
+Declaration:
+
+	dataType[] arr; || dataType []arr; || dataType arr[];  
+	
+	dataType[][] arrayRefVar; || dataType [][]arrayRefVar; || dataType arrayRefVar[][]; || dataType []arrayRefVar[];   
+
+Instantiation: 
+
+	arrayRefVar=new datatype[size];
+
+Exp: 
+	+ int a[] = new int[5];
+	+ int[][] arr=new int[3][3];
+		
+
+Special: Jagged array: Array of arrays with different number of column
+
+Other option:
+	- Copying array : 
+		public static void arraycopy(  
+			Object src, int srcPos,Object dest, int destPos, int length  
+		)
+
+		1. Object src: Object you want to copy from
+		2. int srcPos: Index of the starting object you want to copy in array
+		3. Object dest: Object you want to copy to
+		4. int destPos: Index of the destination object you want to copy in array
+		5. int length : Length of objects copied
+		
+	- Cloning array:
+	
+		int arrDest[]= arrSrc.clone();  
+		
+	- Addition, Multiplication  of 2 Matrices:
+	
+		for loop 2 arr by length
+	
+		
+		
+
+	
+
+
+
+
+

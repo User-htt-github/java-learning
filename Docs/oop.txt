@@ -1,0 +1,45 @@
+Inheritance
+1. Inheritance
+	- Inheritance is a mechanism in which one object acquires all the properties and behaviors of a parent object. Use for overriding and code reuseability
+
+	- Syntax: 
+		class Subclass-name extends Superclass-name  { }  
+		
+	- Type of inheritance:
+		+ Single
+		+ Multilevel
+		+ Hierarchical
+2. Aggregation
+	- If a class have an entity reference, it is known as Aggregation. Aggregation represents HAS-A relationship.
+	
+	- When to use:
+		+ Code reuse is also best achieved by aggregation when there is no is-a relationship.
+		+ Inheritance should be used only if the relationship is-a is maintained throughout the lifetime of the objects involved; otherwise, aggregation is the best choice.
+		
+Polymorphism
+1. Overloading
+	- Same name, different params
+	
+2. Overriding
+	- If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+	
+3. Covariant Return Type
+	- The covariant return type specifies that the return type may vary in the same direction as the subclass.
+	
+4.Keyword
+	- Super: 
+		+ super can be used to refer immediate parent class instance variable.
+		+ super can be used to invoke immediate parent class method.
+		+ super() can be used to invoke immediate parent class constructor.
+		
+	- Final: can be variable, method, class
+	
+		+ Variable: Value cant be change ~ constant
+		+ Method: Cant override method with final
+		+ Class: Cant extend class with final, Can inherited but cant override
+
+5. Instance initializer block
+	- Instance initializer block is used to initialize the instance data member. It run each time when object of the class is created.
+	- There are three places in java where you can perform operations: method, constructor, block
+	
+	
