@@ -42,4 +42,55 @@ Polymorphism
 	- Instance initializer block is used to initialize the instance data member. It run each time when object of the class is created.
 	- There are three places in java where you can perform operations: method, constructor, block
 	
+6. Binding : Connecting a method call to the method body is known as binding.
+	- Static Binding (also known as Early Binding). 
+		+ When type of the object is determined at compiled time(by the compiler), it is known as static binding.
+		+ If there is any private, final or static method in a class, there is static binding.
+	- Dynamic Binding (also known as Late Binding).
+		+ When type of the object is determined at run-time, it is known as dynamic binding.
 	
+7. instanceof
+	- The instanceof operator is used to test whether the object is an instance of the specified type (class or subclass or interface).
+	
+Abstraction : Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+1. Abstract class
+	- A class which is declared as abstract is known as an abstract class. It can have abstract and non-abstract methods. It needs to be extended and its method implemented. It cannot be instantiated.
+	- Note: 
+		+ An abstract class must be declared with an abstract keyword.
+		+ It can have abstract and non-abstract methods.
+		+ It cannot be instantiated.
+		+ It can have constructors and static methods also.
+		+ It can have final methods which will force the subclass not to change the body of the method.
+2. Abstract method
+	- A method which is declared as abstract and does not have implementation is known as an abstract method.
+3. Interface
+	- An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+4. Abstract vs Interface
+	- Abstract
+		+ Abstract class can have abstract and non-abstract methods.
+		+ Abstract class doesn't support multiple inheritance.
+		+ Abstract class can have final, non-final, static and non-static variables.
+		+ Abstract class can provide the implementation of interface.
+		+ The abstract keyword is used to declare abstract class.
+		+ An abstract class can extend another Java class and implement multiple Java interfaces.
+		+ An abstract class can be extended using keyword "extends".
+		+ An abstract class can have class members like private, protected, etc.
+		
+	- Interface
+		+ Interface can have only abstract methods. Since Java 8, it can have default and static methods also.
+		+ Interface supports multiple inheritance.
+		+ Interface has only static and final variables.
+		+ Interface can't provide the implementation of abstract class.
+		+ The interface keyword is used to declare interface.
+		+ The interface keyword is used to declare interface.
+		+ An interface can be implemented using keyword "implements".
+		+ Members of an interface are public by default.
+		
+Encapsulation
+1. Package
+	- A java package is a group of similar types of classes, interfaces and sub-packages.
+	- Package in java can be categorized in two form, built-in package and user-defined package.
+	- Advantages 
+		+ Java package is used to categorize the classes and interfaces so that they can be easily maintained.
+		+ Java package provides access protection.
+		+ Java package removes naming collision.
