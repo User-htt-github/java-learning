@@ -1,0 +1,27 @@
+LinkedList
+- LinkedList class uses a doubly linked list to store the elements
+- Can contain duplicate elements
+- Maintain insertion order
+- non synchronized
+- manipulation is fast because no shifting needs to occur
+- can be used as a list, stack or queue
+- Method
+	+ add(index?, element)
+	+ addAll(index?, Collection<? extends E> c)
+	+ addFirst(E e)
+	+ addLast(E e)
+	+ clear()
+	+ contains(object)
+	+ Iterator<E> descendingIterator() : It is used to return an iterator over the elements in a deque in reverse sequential order.
+	+ E element()
+	+ get(index), getFirst(), getLast()
+	+ indexOf(Object o)
+	+ lastIndexOf(Object o)
+	+ ListIterator<E> listIterator(int index)
+	+ offer(), offerFirst(), offerLast(): insert element into list
+	+ peek(), peekFirst(), pickLast(): retrieves an element of the list
+	+ poll(), pollFirst(), pollLast(): retrieves and remove an element of the list
+	+ pop: similar to removeFirst() - It pops an element from the stack represented by a list.
+	+ push: It pushes an element onto the stack represented by a list.
+	+ remove()
+	+ E set(int index, E element)

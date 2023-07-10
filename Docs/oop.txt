@@ -94,3 +94,12 @@ Encapsulation
 		+ Java package is used to categorize the classes and interfaces so that they can be easily maintained.
 		+ Java package provides access protection.
 		+ Java package removes naming collision.
+2. Access Modifiers
+	- Private
+	- Default
+	- Protected
+	- Public
+	
+3. Encapsulation
+	- Encapsulation in Java is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
+	

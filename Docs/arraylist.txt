@@ -1,0 +1,24 @@
+ArrayList
+- ArrayList class uses a dynamic array for storing element
+- No size limit
+- Add or Remove elements anytime
+- Can have the duplicate elements
+- maintain insertion order
+- non synchronized
+- slower than the linkedlist
+- Method
+	+ add(index?, element)
+	+ addAll(index?, Collection<? extends E> c)
+	+ clear()
+	+ get(index), set(index, element)
+	+ isEmpty()
+	+ Iterator(), listIterator()
+	+ sort()
+	....
+- Way to loop
+	+ Iterator 
+	+ for-each
+	+ ListIterator 
+	+ for loop
+	+ forEach()
+	+ forEachRemaining()
